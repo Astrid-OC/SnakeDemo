@@ -25,7 +25,7 @@ function apparitionGrille() {
     serpent.forEach(segment => grille[segment.y][segment.x] = '*');
 
     // Place de la nourriture
-    grille[pomme.y][pomme.x] = 'O';
+    grille[pomme.y][pomme.x] = '\x1b[31mO\x1b[0m';
 
     console.clear();
     console.log('Utilisez les touches Z (Haut), S (Bas), Q (Gauche), D (Droite) pour jouer.');
